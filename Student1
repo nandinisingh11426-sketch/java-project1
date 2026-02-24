@@ -1,0 +1,27 @@
+class Student {
+    int roll;
+    String name;
+
+    Student() {
+        roll = 0;
+        name = "Not Assigned";
+    }
+
+    Student(int r, String n) {
+        roll = r;
+        name = n;
+    }
+
+    void display() {
+        System.out.println("Roll: " + roll);
+        System.out.println("Name: " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        Student s2 = new Student(102, "Nandini");
+
+        s1.display();
+        s2.display();
+    }
+}
